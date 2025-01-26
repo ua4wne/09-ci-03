@@ -67,4 +67,22 @@
     type: tar.gz.
 
 2. В него же загрузите такой же артефакт, но с version: 8_102.
+
+![upload](./task2/upload.png)
+
 3. Проверьте, что все файлы загрузились успешно.
+
+![browse](./task2/browse.png)
+
+4. В ответе пришлите файл maven-metadata.xml для этого артефакта.
+
+![maven-metadata.xml](./task3/maven-metadata.xml)
+
+# Знакомство с Maven
+
+## Подготовка к выполнению
+
+1. Скачайте дистрибутив с [maven](https://maven.apache.org/download.cgi)
+2. Разархивируйте, сделайте так, чтобы binary был доступен через вызов в shell (или поменяйте переменную PATH, или любой другой, удобный вам способ).
+3. Удалите из apache-maven-<version>/conf/settings.xml упоминание о правиле, отвергающем HTTP- соединение — раздел mirrors —> id: my-repository-http-unblocker.
+4. Заберите директорию [mvn](./mvn/) с pom.
