@@ -68,11 +68,11 @@
 
 2. В него же загрузите такой же артефакт, но с version: 8_102.
 
-![upload](./task2/upload.png)
+![upload](./task3/upload.png)
 
 3. Проверьте, что все файлы загрузились успешно.
 
-![browse](./task2/browse.png)
+![browse](./task3/browse.png)
 
 4. В ответе пришлите файл maven-metadata.xml для этого артефакта.
 
