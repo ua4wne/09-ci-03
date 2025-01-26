@@ -76,7 +76,7 @@
 
 4. В ответе пришлите файл maven-metadata.xml для этого артефакта.
 
-![maven-metadata.xml](./task3/maven-metadata.xml)
+>Ответ: ![maven-metadata.xml](./task3/maven-metadata.xml)
 
 # Знакомство с Maven
 
@@ -85,4 +85,23 @@
 1. Скачайте дистрибутив с [maven](https://maven.apache.org/download.cgi)
 2. Разархивируйте, сделайте так, чтобы binary был доступен через вызов в shell (или поменяйте переменную PATH, или любой другой, удобный вам способ).
 3. Удалите из apache-maven-<version>/conf/settings.xml упоминание о правиле, отвергающем HTTP- соединение — раздел mirrors —> id: my-repository-http-unblocker.
-4. Заберите директорию [mvn](./mvn/) с pom.
+4. Проверьте mvn --version.
+
+![mvn_ver](./task4/mvn_ver.png)
+
+5. Заберите директорию [mvn](./mvn/) с pom.
+
+## Основная часть
+
+1. Поменяйте в pom.xml блок с зависимостями под ваш артефакт из первого пункта задания для Nexus (java с версией 8_282).
+2. Запустите команду mvn package в директории с pom.xml, ожидайте успешного окончания.
+
+![build](./task4/build.png)
+
+3. Проверьте директорию ~/.m2/repository/, найдите ваш артефакт.
+
+![repo](./task4/repo.png)
+
+4. В ответе пришлите исправленный файл pom.xml.
+
+>Ответ: [pom.xml](./mvn/pom.xml)
